@@ -1,0 +1,16 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.bookContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.book1 {
+  border: solid black 1px;
+  height: 600px;
+  width: 400px;
+  text-align: center;
+}
