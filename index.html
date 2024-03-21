@@ -7,12 +7,57 @@
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
-<div class="bookContainer">
-  <div class="book1">A</div>
-</div>
 
 <body>
+  <div class="pageGrid">
+    <h1>Welcome To The Online Library</h1>
+    <div class="bookContainer">
+      <div class="book1">
+        <h1 class="book1-title">Title Text </h1>
+        <div class="book1-text-div">
+          <p class="book1-author">Author: </p>
+          <p class="book1-pages">Number Of Pages: </p>
+        </div>
+      </div>
+      <div class="book2">
+        <h1 class="book2-title">Title Text</h1>
+        <div class="book2-text-div">
+          <p class="book2-author">Author: </p>
+          <p class="book2-pages">Number Of Pages: </p>
+        </div>
+      </div>
+      <div class="book3">
+        <h1 class="book3-title">Title Text</h1>
+        <div class="book3-text-div">
+          <p class="book3-author">Author: </p>
+          <p class="book3-pages">Number Of Pages: </p>
+        </div>
+      </div>
+    </div>
+    <div class="formcontainer">
+      <form id="fillOutBookInfo">
+        <div class="booktitle">
+          <p>Book Title</p>
+          <input id="#inputbook" type="text" placeholder="Book Title">
+        </div>
+        <div class="author">
+          <p>Authors Name</p>
+          <input id="#inputauthor" type="text" placeholder="Authors Name">
+        </div>
+        <div class="pages">
+          <p>How many Pages?</P>
+          <input id="#inputpagenum" type="number" placeholder="Number of pages">
+        </div>
+        <div class="read">
+          <p>Have you read the book?</p>
+          <input id="#inputhaveread" type="text" placeholder="Have you read the book?">
+        </div>
+        <button type="submit" for="form" class="formButton">New Book</button>
+      </form>
+    </div>
+  </div>
   <script src="index.js"></script>
 </body>
 
 </html>
+</div>

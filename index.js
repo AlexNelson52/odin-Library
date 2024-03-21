@@ -1,6 +1,6 @@
 'use strict';
 
-const myLibrary = [];
+const myLibrary = ['Harry Potter', 'The Catcher in the Rye', 'Moby-Dick', 'To Kill a Mockingbird'];
 
 function Book() {
   // the constructor...
@@ -9,3 +9,4 @@ function Book() {
 function addBookToLibrary() {
   // do stuff here
 }
+
