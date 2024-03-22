@@ -35,14 +35,14 @@ function addBook() {
   formPopUp.style.display = 'none';
   const newContainer = document.createElement('div')
   let removeBtn = document.createElement('button')
+  removeBtn.classList.add('close')
   removeBtn.textContent = 'X'
   let h1 = document.createElement('h1')
   let p1 = document.createElement('p')
   let p2 = document.createElement('p')
   newContainer.classList.add('bookContainer')
   bookCardContainer.appendChild(newContainer)
-  h1.textContent = "Test"
-  p1.textContent = `Title: ${inputTitle.value}`;
+  h1.textContent = `Title: ${inputTitle.value}`;
   p2.textContent = `Author: ${inputAuthor.value}`
   newContainer.appendChild(h1)
   newContainer.appendChild(p1)
