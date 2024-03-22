@@ -5,7 +5,7 @@
 
 body,
 html {
-  background-image: linear-gradient(to right, lightBlue, white, lightBlue);
+  background-image: linear-gradient(to right, rgb(107, 110, 110), rgb(143, 137, 137), rgb(255, 255, 255));
   height: 100%;
 
 }
@@ -29,28 +29,37 @@ ul {
   border: 1px solid black;
   display: flex;
   justify-content: center;
-  align-content: last baseline;
   height: 90%;
   position: relative;
   width: 90%;
   flex-wrap: wrap;
-  gap: 10px;
-  margin: 0px auto;
+  align-items: center;
+
 }
 
 .bookContainer {
-  max-height: 45%;
   border: 1px solid black;
-  max-width: 10%;
   position: relative;
   font-size: clamp(20%, 5rem);
   min-width: 20%;
-  min-height: 10%;
+  min-height: 45%;
+  max-width: 20%;
+  max-height: 45%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-
+  gap: 100%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 3px 9px 3px black;
+  flex-wrap: wrap;
 }
+
+.bookh1 {
+  grid-area: 1/3/10/10;
+  font-size: 1.5rem;
+  max-height: 30%;
+  padding-bottom: 14%;
+}
+
 
 form {
   display: hidden;
@@ -67,6 +76,7 @@ form {
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
+  background-color: aliceblue;
 }
 
 
@@ -80,13 +90,20 @@ form {
 .titleDiv2 {
   display: flex;
   gap: 10px;
-  padding-bottom: 35%
+  padding-bottom: 5%;
+}
+
+.titleDiv3 {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 5%;
 }
 
 
 
+
 .form-h1 {
-  font-size: 1.5rem;
+  font-size: 100%;
 }
 
 .close {
@@ -102,4 +119,26 @@ form {
 
 .close:hover {
   background-color: #7c7b7b3a !important;
+}
+
+.bookp1 {
+  grid-area: 4/1/4/10;
+  text-align: center;
+  font-size: 100%;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  padding-bottom: 14%;
+}
+
+.bookp2 {
+  grid-area: 5/1/5/10;
+  text-align: center;
+  flex-wrap: wrap;
+  font-size: large;
+  padding-bottom: 14%;
+}
+
+.inputPages {
+  height: 16px;
+  width: 50%
 }
